@@ -1,0 +1,38 @@
+
+<div class="container">
+    <div class="splitLeft left">
+      <div class="cardleft">
+        <div><b><strong>Filters</strong></b></div>
+        <div><u>Launch Year</u></div>
+        <div class="buttonContainer"> 
+          <button class = "button" [ngClass]="{'myClass' : launchYear.flag }" *ngFor="let launchYear of launchYearFilter" (click)="onClickMe(launchYear,'launch_year','launchYearFilter')">{{launchYear.value}}</button>
+        </div>
+         
+            <div><u>Successful Launch</u></div>
+            <button class = "button1" [ngClass]="{'myClass' : LaunchFilter.flag }" *ngFor="let LaunchFilter of sucessfulLaunchFilter" (click)="onClickMe(LaunchFilter,'launch_success','sucessfulLaunchFilter')">{{LaunchFilter.value}}</button> 
+            <div><u>Successful Landing</u></div>
+            <button class = "button1" [ngClass]="{'myClass' : LandFilter.flag }" *ngFor="let LandFilter of sucessfulLandFilter" (click)="onClickMe(LandFilter,'land_success','sucessfulLandFilter')">{{LandFilter.value}}</button>   
+      </div>
+    </div>
+    
+    <div class="splitRight right">
+      <div class="row">
+        <ng-container *ngFor ="let satelliteInfo of satellitesInfo">
+          <div class="column">
+            <div class="card">
+              <img class="imagecss" [src]="satelliteInfo.links.mission_patch_small" alt="{{satelliteInfo.mission_name}}">
+              <p>{{satelliteInfo.mission_name}} # {{satelliteInfo.flight_number}}<p>
+                <span>Mission ids :</span>
+                <li *ngFor="let mission_id of satelliteInfo.mission_id">{{mission_id}}</li>
+              <p>Launch Year :{{satelliteInfo.launch_year}}</p>
+              <p>Successful Launch :{{satelliteInfo.launch_success}}</p>
+              <p>Successful Landing :{{satelliteInfo.rocket.first_stage.cores[0].land_success}}</p>
+            </div>
+          </div>
+      </ng-container>
+      </div> 
+    </div>
+  
+  
+  </div>
+  
