@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Lighthouse Report
 
-![Alt text](/relative/path/to/img.jpg?raw=true)
+![Alt text](/src/assets/Lighthousereport.png?raw=true)
