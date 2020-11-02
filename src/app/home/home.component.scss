@@ -49,6 +49,7 @@
       .splitRight {
        flex:1; 
         padding-top: 20px;
+        margin : 0 30px;
       }
       .cardleft{
         margin: 0 36px;
@@ -78,6 +79,7 @@
         position: sticky;
         z-index: 1;
         top: 0;
+        margin: 0 2px;
         overflow-x: hidden;
         padding-top: 20px;
       }
@@ -87,6 +89,7 @@
        flex:6;
         z-index: 1;
         top: 0;
+        margin: -4px 10px;
         overflow-x: hidden;
         padding-top: 20px;
       }
@@ -111,6 +114,7 @@
         position: sticky;
         z-index: 1;
         top: 0;
+        margin: 0 2px;
         overflow-x: hidden;
         padding-top: 20px;
       }
@@ -120,6 +124,7 @@
        flex:6;
         z-index: 1;
         top: 0;
+        margin: -4px 10px;
         overflow-x: hidden;
         padding-top: 20px;
       }
@@ -132,10 +137,11 @@
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
+    border-radius: 3px;
   }
 
   .cardleft{
-    
+    border-radius: 3px;
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
@@ -150,8 +156,7 @@
     border: none;
     text-align: center;
     display: inline-block;
-    // font-size: 20px;
-    margin: 6px 12px; 
+    margin: 6px 11px; 
     border-radius: 3px;
     padding: 4px 16px;
   }
@@ -161,7 +166,6 @@
     border: none;
     text-align: center;
     display: inline-block;
-    // font-size: 20px;
     margin: 6px 10px; 
     border-radius: 3px;
     padding: 4px 17px;

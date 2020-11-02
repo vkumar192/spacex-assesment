@@ -21,12 +21,12 @@
           <div class="column">
             <div class="card">
               <img class="imagecss" [src]="satelliteInfo.links.mission_patch_small" alt="{{satelliteInfo.mission_name}}">
-              <p>{{satelliteInfo.mission_name}} # {{satelliteInfo.flight_number}}<p>
+              <p>{{satelliteInfo?.mission_name ||'mission_name'}} # {{satelliteInfo?.flight_number || 'flight_number'}}<p>
                 <span>Mission ids :</span>
                 <li *ngFor="let mission_id of satelliteInfo.mission_id">{{mission_id}}</li>
-              <p>Launch Year :{{satelliteInfo.launch_year}}</p>
-              <p>Successful Launch :{{satelliteInfo.launch_success}}</p>
-              <p>Successful Landing :{{satelliteInfo.rocket.first_stage.cores[0].land_success}}</p>
+              <p>Launch Year :{{satelliteInfo?.launch_year || 'NA'}}</p>
+              <p>Successful Launch : {{satelliteInfo?.launch_success || 'NA'}}</p>
+              <p>Successful Landing : {{satelliteInfo.rocket.first_stage.cores[0]?.land_success || 'NA'}}</p>
             </div>
           </div>
       </ng-container>
