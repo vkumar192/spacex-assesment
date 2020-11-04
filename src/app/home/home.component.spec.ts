@@ -12,13 +12,7 @@ describe('HomeComponent', () => {
   let fixture: ComponentFixture<HomeComponent>;
   let spacexService: SpacexService;
   let satellites: any;
-  // beforeEach(async(() => {
-  //   TestBed.configureTestingModule({
-  //     declarations: [ HomeComponent ]
-  //   })
-  //   .compileComponents();
-  // }));
-
+ 
   beforeEach(() => {
 
     TestBed.configureTestingModule({
@@ -41,21 +35,21 @@ describe('HomeComponent', () => {
   });
 
 
-//   it('On init users should be loaded', fakeAsync(() => {
-//     spyOn(spacexService, 'getSatelliteInfo').and.returnValue(of([]).pipe(delay(1)));
+  it('On init SatelliteInfo should be loaded', fakeAsync(() => {
+    spyOn(spacexService,'getSatelliteInfo').and.returnValue(of(satellites).pipe(delay(1)));
 
-//     // Trigger ngOnInit()
-//     fixture.detectChanges();
-
-    
-//     expect(component.satellitesInfo).toBeUndefined();
-//     expect(spacexService.getSatelliteInfo).toHaveBeenCalledWith();
-
-//     // Simulates the asynchronous passage of time
-//     tick(1);
+    // Trigger ngOnInit()
+    fixture.detectChanges();
 
     
-//     expect(component.satellitesInfo).toEqual([satellites]);
-// }));
+    expect(component.satellitesInfo).toBeUndefined();
+   
+
+    // Simulates the asynchronous passage of time
+    tick(1);
+
+    
+    expect(component.satellitesInfo).toEqual(satellites);
+}));
 
 });
