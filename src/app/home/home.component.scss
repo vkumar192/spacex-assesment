@@ -57,6 +57,26 @@
         text-align: center;
         background-color: #f1f1f1;
       }
+
+      .button {
+        background-color: #90EE90; /* Green */
+        border: none;
+        text-align: center;
+        display: inline-block;
+        margin: 6px 21px; 
+        border-radius: 3px;
+        padding: 4px 16px;
+      }
+
+      .button1 {
+        background-color: #90EE90; /* Green */
+        border: none;
+        text-align: center;
+        display: inline-block;
+        margin: 6px 20px; 
+        border-radius: 3px;
+        padding: 4px 19px;
+      }
       
   }
 
@@ -93,6 +113,26 @@
         overflow-x: hidden;
         padding-top: 20px;
       }
+
+      .button {
+        background-color: #90EE90; /* Green */
+        border: none;
+        text-align: center;
+        display: inline-block;
+        margin: 6px 11px; 
+        border-radius: 3px;
+        padding: 4px 16px;
+      }
+
+      .button1 {
+        background-color: #90EE90; /* Green */
+        border: none;
+        text-align: center;
+        display: inline-block;
+        margin: 6px 10px; 
+        border-radius: 3px;
+        padding: 4px 17px;
+      }
   }
   
   @media screen and (min-width: 1024px) {
@@ -128,6 +168,26 @@
         overflow-x: hidden;
         padding-top: 20px;
       }
+
+      .button {
+        background-color: #90EE90; /* Green */
+        border: none;
+        text-align: center;
+        display: inline-block;
+        margin: 6px 7px; 
+        border-radius: 3px;
+        padding: 4px 16px;
+      }
+
+      .button1 {
+        background-color: #90EE90; /* Green */
+        border: none;
+        text-align: center;
+        display: inline-block;
+        margin: 6px 5px; 
+        border-radius: 3px;
+        padding: 4px 20px;
+      }
   }
 
  
@@ -151,25 +211,9 @@
     width: 50%;
   }
 
-  .button {
-    background-color: #90EE90; /* Green */
-    border: none;
-    text-align: center;
-    display: inline-block;
-    margin: 6px 11px; 
-    border-radius: 3px;
-    padding: 4px 16px;
-  }
+  
 
-  .button1 {
-    background-color: #90EE90; /* Green */
-    border: none;
-    text-align: center;
-    display: inline-block;
-    margin: 6px 10px; 
-    border-radius: 3px;
-    padding: 4px 17px;
-  }
+  
 
   .myClass{
       background-color: green;

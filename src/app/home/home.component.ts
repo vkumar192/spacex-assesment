@@ -34,9 +34,9 @@ export class HomeComponent implements OnInit {
   constructor(private spacexService: SpacexService) { }
 
   ngOnInit() {
-    this.getSatellitesInfo();
+    this.getSatelliteInfo();
   }
-  getSatellitesInfo() {
+  getSatelliteInfo() {
     this.spacexService.getSatelliteInfo()
       .subscribe(satellites => this.satellitesInfo = satellites);
   }
